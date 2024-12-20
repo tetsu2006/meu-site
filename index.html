@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline & Achievements</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Barra de Menu -->
+  <header id="menu">
+    <nav>
+      <ul>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#gallery">Galeria</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção: Timeline -->
+  <section id="timeline" class="active">
+    <h1>Timeline</h1>
+    <div id="timer-container">
+      <p>Estamos juntos há:</p>
+      <p id="timer">Carregando...</p>
+      <button id="resgatar-achievement" class="custom-button">Resgatar Achievement</button>
+    </div>
+  </section>
+
+  <!-- Pop-up -->
+  <div id="popup" class="hidden">
+    <div id="popup-content">
+      <button id="popup-close">X</button>
+      <h2 id="popup-title">Título</h2>
+      <img id="popup-icon" src="" alt="Ícone do Achievement">
+      <p id="popup-date"></p>
+      <p id="popup-message"></p>
+    </div>
+  </div>
+
+  <!-- Seções adicionais -->
+  <section id="achievements">
+    <h1>Achievements</h1>
+    <div id="achievement-list"></div>
+  </section>
+  
+  <section id="gallery">
+    <h1>Galeria</h1>
+    <div class="photo-gallery">
+      <img src="images/foto1.jpg" alt="Foto 1">
+      <img src="images/foto2.jpg" alt="Foto 2">
+      <img src="images/foto3.jpg" alt="Foto 3">
+      <img src="images/foto4.jpg" alt="Foto 4">
+      <img src="images/foto5.jpg" alt="Foto 5">
+      <img src="images/foto6.jpg" alt="Foto 6">
+      <img src="images/foto7.jpg" alt="Foto 7">
+      <img src="images/foto8.jpg" alt="Foto 8">
+      <img src="images/foto9.jpg" alt="Foto 9">
+      <img src="images/foto10.jpg" alt="Foto 10">
+      <img src="images/foto11.jpg" alt="Foto 11">
+      <img src="images/foto12.jpg" alt="Foto 12">
+      <img src="images/foto13.jpg" alt="Foto 13">
+      <img src="images/foto14.jpg" alt="Foto 14">
+      <img src="images/foto15.jpg" alt="Foto 15">
+      <img src="images/foto16.jpg" alt="Foto 16">
+      <img src="images/foto17.jpg" alt="Foto 17">
+      <img src="images/foto18.jpg" alt="Foto 18">
+      <img src="images/foto19.jpg" alt="Foto 19">
+      <img src="images/foto20.jpg" alt="Foto 20">
+      <img src="images/foto21.jpg" alt="Foto 21">
+      <img src="images/foto22.jpg" alt="Foto 22">
+      <img src="images/foto23 (42).jpeg" alt="Foto 23">
+      <img src="images/foto23 (43).jpeg" alt="Foto 24">
+      <img src="images/foto23 (44).jpeg" alt="Foto 25">
+      <img src="images/foto23 (45).jpeg" alt="Foto 26">
+      <img src="images/foto23 (46).jpeg" alt="Foto 27">
+      <img src="images/foto23 (47).jpeg" alt="Foto 28">
+      <img src="images/foto23 (48).jpeg" alt="Foto 29">
+      <img src="images/foto23 (49).jpeg" alt="Foto 30">
+      <img src="images/foto23 (50).jpeg" alt="Foto 31">
+      <img src="images/foto23 (51).jpeg" alt="Foto 32">
+      <img src="images/foto23 (52).jpeg" alt="Foto 33">
+      <img src="images/foto23 (53).jpeg" alt="Foto 34">
+      <img src="images/foto23 (54).jpeg" alt="Foto 35">
+      <img src="images/foto23 (55).jpeg" alt="Foto 36">
+      <img src="images/foto23 (56).jpeg" alt="Foto 37">
+      <img src="images/foto23 (57).jpeg" alt="Foto 38">
+      <img src="images/foto23 (58).jpeg" alt="Foto 39">
+      <img src="images/foto23 (59).jpeg" alt="Foto 40">
+      <img src="images/foto23 (60).jpeg" alt="Foto 41">
+      <img src="images/foto23 (61).jpeg" alt="Foto 42">
+      <img src="images/foto23 (62).jpeg" alt="Foto 43">
+      <img src="images/foto23 (63).jpeg" alt="Foto 44">
+      <img src="images/foto23 (64).jpeg" alt="Foto 45">
+      <img src="images/foto23 (65).jpeg" alt="Foto 46">
+      <img src="images/foto23 (66).jpeg" alt="Foto 47">
+      <img src="images/foto23 (67).jpeg" alt="Foto 48">
+      <img src="images/foto23 (68).jpeg" alt="Foto 49">
+      <img src="images/foto23 (69).jpeg" alt="Foto 50">
+      <img src="images/foto23 (70).jpeg" alt="Foto 51">
+      <img src="images/foto23 (71).jpeg" alt="Foto 52">
+      <img src="images/foto23 (72).jpeg" alt="Foto 53">
+      <img src="images/foto23 (73).jpeg" alt="Foto 54">
+      <img src="images/foto23 (74).jpeg" alt="Foto 55">
+      <img src="images/foto23 (75).jpeg" alt="Foto 56">
+      <img src="images/foto23 (76).jpeg" alt="Foto 57">
+      <img src="images/foto23 (77).jpeg" alt="Foto 58">
+      <img src="images/foto23 (78).jpeg" alt="Foto 59">
+      <img src="images/foto23 (79).jpeg" alt="Foto 60">
+      <img src="images/foto23 (80).jpeg" alt="Foto 61">
+      <img src="images/foto23 (81).jpeg" alt="Foto 62">
+    </div>
+  </section>
+  <div class="bg"></div>
+
+<div class="star-field">
+<div class="layer"></div>
+<div class="layer"></div>
+<div class="layer"></div>
+</body>
+</html>
